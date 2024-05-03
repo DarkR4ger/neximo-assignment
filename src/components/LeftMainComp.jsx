@@ -10,7 +10,7 @@ import sideBarIcon9 from '../assets/icons/sidebarIcons/sidebar-icon-9.svg';
 
 const LeftMainComp = () => {
   return (
-    <section className="flex rounded-tr-[80px] shadow-box pt-5 flex-col  w-[125px] items-center h-[2466px]">
+    <section className="flex rounded-tr-[80px] shadow-box pt-5 flex-col  w-[125px] items-center h-[2666px]">
       <ul className="flex flex-col justify-center gap-10 pt-7 ">
         <li>
           <img src={sideBarIcon1} alt="sideBarIcon1" className="cursor-pointer" />

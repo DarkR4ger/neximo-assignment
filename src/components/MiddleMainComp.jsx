@@ -4,6 +4,7 @@ import CalenderComp from "./middleComp/CalenderComp";
 import CandiateStatusComp from "./middleComp/CandiateStatusComp";
 import HiringCand from "./middleComp/HiringCand";
 import JobPostedComp from "./middleComp/JobPostedComp";
+import Meetings from "./middleComp/Meetings";
 import Upcomings from "./middleComp/Upcomings";
 
 const MiddleMainComp = () => {
@@ -24,8 +25,9 @@ const MiddleMainComp = () => {
       <section>
         <ApplicationInfo />
       </section>
-      <section className="flex gap-10">
-        <div className="pl-5 flex flex-col items-center">
+      <section className="flex gap-2">
+        <div className="pl-10 flex flex-col items-center">
+          <Meetings />
           <JobPostedComp />
           <CandiateStatusComp />
         </div>

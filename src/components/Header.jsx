@@ -8,10 +8,10 @@ import userLogo from '../assets/icons/navbarIcons/user-1 5.png'
 
 const Header = () => {
   return (
-    <main className="p-5 shadow-xl flex justify-between items-center">
+    <main className="p-5 shadow-box flex justify-between items-center">
       <section className="flex gap-20">
         <img src={companyLogo} alt="company Logo" className="self-center" />
-        <div className="flex shadow-xl rounded-xl ">
+        <div className="flex shadow-box rounded-xl ">
           <input type="search" className="px-5 text-xl rounded-l-xl w-[450px] rounded-xl focus:outline-none " placeholder="Search" />
           <img src={searchIcon} alt="Search Icon" className="relative right-5 self-center cursor-pointer" />
         </div>

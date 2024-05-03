@@ -10,7 +10,7 @@ import upArrowIcon from "../../assets/icons/upArrow.svg";
 const JobPostedComp = () => {
   return (
     <div
-      className="px-5 rounded-xl mt-20 shadow-box py-10 w-[1359px] mb-14"
+      className="px-5 rounded-xl mt-10 shadow-box py-10 w-[1359px] mb-14"
     >
       <div className="flex items-center justify-between pb-5">
         <div className="flex items-center gap-12">
