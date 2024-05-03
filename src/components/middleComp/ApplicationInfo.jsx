@@ -47,7 +47,7 @@ const ApplicationInfo = () => {
               <p>Processed</p>
             </div>
           </div>
-          <button className="flex gap-2 border-2 p-2 rounded-[3px] border-[#0A66C2]">
+          <button className="flex gap-2 border-2 p-2 rounded-[3px] border-[#0A66C2] items-center">
             Month
             <img src={dropDownIcon} alt="Drop down svg" />
           </button>
@@ -65,7 +65,7 @@ const ApplicationInfo = () => {
               <img
                 src={zigzagIcon}
                 alt="Zig Zag "
-                className="absolute top-[490px] left-[236px]"
+                className="absolute top-[490px] left-[200px]"
               />
             {barHeights.map((height, index) => {
               const bgColor =
