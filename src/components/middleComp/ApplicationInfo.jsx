@@ -36,8 +36,8 @@ const ApplicationInfo = () => {
   ];
 
   return (
-    <div className="flex gap-8 mt-20">
-      <div className="w-[968px] p-5 flex flex-col">
+    <div className="flex px-5 gap-8 mt-20">
+      <div className="w-[968px] shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-xl  p-5 flex flex-col">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-20">
             <h2 className="font-medium text-[22px]">Application&#39;s Info</h2>
@@ -92,7 +92,7 @@ const ApplicationInfo = () => {
         </div>
       </div>
       
-      <div className='h-[392px] w-[711px] flex-1 flex items-center justify-between p-14 bg-gradient-to-r from-[#0A66C2] to-[#5994CE] rounded-[10px]'>
+      <div className='h-[392px] shadow-box w-[711px] flex-1 flex items-center justify-between p-14 bg-gradient-to-r from-[#0A66C2] to-[#5994CE] rounded-[10px]'>
         <div>
           <div className='w-[125px] flex items-center justify-center h-[125px] bg-zinc-50'>
             <img src={assesmentIcon} alt="assesmentIcon" />

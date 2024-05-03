@@ -8,7 +8,7 @@ import userLogo from '../assets/icons/navbarIcons/user-1 5.png'
 
 const Header = () => {
   return (
-    <main className="p-5 flex justify-between items-center">
+    <main className="p-5 shadow-xl flex justify-between items-center">
       <section className="flex gap-20">
         <img src={companyLogo} alt="company Logo" className="self-center" />
         <div className="flex shadow-xl rounded-xl ">

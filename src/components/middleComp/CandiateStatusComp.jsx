@@ -75,7 +75,7 @@ const CandiateStatusComp = () => {
   ];
 
   return (
-    <div className="px-5 py-10 w-[1359px] mb-14 flex flex-col ">
+    <div className="px-5 shadow-box rounded-xl py-10 w-[1359px] mb-14 flex flex-col ">
       <div className="flex items-center justify-between pb-5">
         <div className="flex items-center gap-12">
           <h2 className="font-medium text-[28px]">Candidate Status</h2>
@@ -84,7 +84,7 @@ const CandiateStatusComp = () => {
           </a>
         </div>
         <div className="flex items-center gap-12">
-          <div className="flex shadow-xl rounded-xl ">
+          <div className="flex shadow-box rounded-xl ">
             <input
               type="search"
               className="px-5 py-3 text-xl rounded-l-xl w-[300px] rounded-xl focus:outline-none "
@@ -96,7 +96,7 @@ const CandiateStatusComp = () => {
               className="relative right-5 self-center cursor-pointer"
             />
           </div>
-          <div className="flex gap-5 cursor-pointer">
+          <div className="flex gap-5 p-4 shadow-box rounded-xl cursor-pointer">
             <img src={filterIcon} alt="Filter Icon" className="" />
             <p className="text-xl">Filters</p>
           </div>
@@ -105,7 +105,7 @@ const CandiateStatusComp = () => {
       <div className="w-full mt-10 flex justify-center items-center ">
         <table className="table-auto w-full border-b-2 border-lightGrey">
           <thead className="">
-            <tr className="font-medium text-left text-sm border-b-2 border-lightGrey">
+            <tr className="font-medium bg-[#F5F5F5] text-left text-sm border-b-2 border-lightGrey">
               <th className="">Job Id</th>
               <th>Name</th>
               <th>Position</th>
@@ -133,7 +133,9 @@ const CandiateStatusComp = () => {
                   </td>
                   <td>
                     {candidate.level3.length === 0 ? (
-                      <img src={xmarkIcon} alt="xmarkIcon" className="pl-7" />
+                      <div className="flex bg-[#E73B3B15] justify-center items-center relative left-4  h-[25px] w-[25px] rounded-full">
+                        <img src={xmarkIcon} alt="xmarkIcon" className="w-[10px] h-[10px]" />
+                      </div>
                     ) : (
                       <p className="pl-4">{candidate.level3}</p>
                     )}
@@ -142,7 +144,9 @@ const CandiateStatusComp = () => {
                     {candidate.level4.length === 0 ? (
                       <img src={moreIcon} alt="moreIcon" className="pl-5" />
                     ) : candidate.level4 === "x" ? (
-                      <img src={xmarkIcon} alt="xmarkIcon" className="pl-7" />
+                      <div className="flex bg-[#E73B3B15] justify-center items-center relative left-4  h-[25px] w-[25px] rounded-full">
+                        <img src={xmarkIcon} alt="xmarkIcon" className="w-[10px] h-[10px]" />
+                      </div>
                     ) : (
                       <p className="pl-4">{candidate.level4}</p>
                     )}
@@ -157,7 +161,7 @@ const CandiateStatusComp = () => {
                   <td>
                     <div className="p-5">
                       <p
-                        className={` inline-block px-2 py-2 rounded-lg ${candidate.status === "Reject" ? "text-red-500" : candidate.status === "Hired" ? "text-green-500 bg-[#0EAD0B15] " : "text-yellow-400"} }`}
+                        className={` text-[14px] inline-block px-2 py-2 rounded-lg ${candidate.status === "Reject" ? "text-red-500 bg-[#E73B3B15]" : candidate.status === "Hired" ? "text-green-500 bg-[#0EAD0B15] " : "text-yellow-400 bg-[#FFF9EC]"} }`}
                       >
                         {candidate.status}
                       </p>

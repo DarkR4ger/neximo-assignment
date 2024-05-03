@@ -1,12 +1,16 @@
+import Activity from "./middleComp/Activity";
 import ApplicationInfo from "./middleComp/ApplicationInfo";
+import CalenderComp from "./middleComp/CalenderComp";
 import CandiateStatusComp from "./middleComp/CandiateStatusComp";
+import HiringCand from "./middleComp/HiringCand";
 import JobPostedComp from "./middleComp/JobPostedComp";
+import Upcomings from "./middleComp/Upcomings";
 
 const MiddleMainComp = () => {
   return (
     <div className="w-full flex flex-col">
-      <div className="flex items-center justify-between ">
-        <div className="flex flex-col gap-5">
+      <div className="flex px-10 items-center justify-between ">
+        <div className="flex  flex-col gap-5">
           <h1 className="font-medium text-4xl">HR Employee</h1>
           <p className="text-xl">
             Enjoy your selecting potential candidates Tracking and Management
@@ -20,10 +24,17 @@ const MiddleMainComp = () => {
       <section>
         <ApplicationInfo />
       </section>
-      <section>
-        <div className="flex flex-col justify-center">
+      <section className="flex gap-10">
+        <div className="pl-5 flex flex-col items-center">
           <JobPostedComp />
           <CandiateStatusComp />
+        </div>
+        <div className="flex w-full flex-col items-center">
+          <CalenderComp />
+          <Upcomings />
+          <Activity />
+          <HiringCand />
+          
         </div>
       </section>
     </div>
