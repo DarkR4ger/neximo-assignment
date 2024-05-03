@@ -1,4 +1,6 @@
 import ApplicationInfo from "./middleComp/ApplicationInfo";
+import CandiateStatusComp from "./middleComp/CandiateStatusComp";
+import JobPostedComp from "./middleComp/JobPostedComp";
 
 const MiddleMainComp = () => {
   return (
@@ -17,6 +19,12 @@ const MiddleMainComp = () => {
       </div>
       <section>
         <ApplicationInfo />
+      </section>
+      <section>
+        <div className="flex flex-col justify-center">
+          <JobPostedComp />
+          <CandiateStatusComp />
+        </div>
       </section>
     </div>
   );
